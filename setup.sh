@@ -2,8 +2,8 @@
 
 pacman -Syyu fzf zoxide zsh docker bat neovim npm pyenv pv
 touch ~/.zshrc
-"$(curl -fsSL https://raw.githubusercontent.com/wilSecord/dotfiles/refs/heads/main/.zshrc)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "$(curl -fsSL https://raw.githubusercontent.com/wilSecord/dotfiles/refs/heads/main/.zshrc)" > .zshrc
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-autosuggestions
