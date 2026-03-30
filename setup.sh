@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-pacman -Syyu fzf zoxide zsh docker bat neovim npm pyenv pv
+pacman -Syyu fzf zoxide zsh docker bat neovim npm pyenv pv git
 touch ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "$(curl -fsSL https://raw.githubusercontent.com/wilSecord/dotfiles/refs/heads/main/.zshrc)" > .zshrc
